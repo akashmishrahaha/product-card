@@ -1,0 +1,162 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+p {
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top:100px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  background-color: hsl(30, 38%, 92%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* This centers content horizontally */
+  align-items: center; /* This centers content vertically */
+  height: 100vh; /* This ensures the body takes up the full height of the viewport */
+  margin: 0; /* Removes default margin */
+  background-color: hsl(30, 38%, 92%);
+}
+
+img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: block;
+  background-color: hsl(30, 38%, 92%);
+}
+
+#content {
+  padding:20px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* height: auto; */
+}
+
+
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  margin-bottom:20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.heading-two {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: bolder;
+  
+  margin-bottom: 25px;
+}
+
+.info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: hsl(228, 12%, 48%);
+}
+
+.price-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price1 {
+  color: hsl(158, 36%, 37%);
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Fraunces", serif;
+}
+
+.price2 {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  font-family: "Fraunces", serif;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  padding:15px 10px;
+  background-color:  hsl(158, 36%, 37%);
+  border-radius: 6px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #image {
+    width: 100%; /* Fixed width for the container */
+    height: 300px; /* Fixed height for the container */
+    overflow: hidden; /* Hides any parts of the image that exceed the container */
+  }
+  
+  #image img {
+    width: 100%; /* Makes the image fill the width of its container */
+    height: 100%; /* Makes the image fill the height of its container */
+    object-fit: cover; /* Zooms the image to cover the container, maintaining aspect ratio */
+  }
+
+  .heading{
+    font-size:13px;
+    font-weight: 500;
+  }
+  .heading-two {
+    font-size:35px ;
+  }
+  .info {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .price1 {
+    font-size:30px ;
+  }
+
+  .price-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+  }
+  .price2 {
+    font-size: 15px;
+  }
+}
